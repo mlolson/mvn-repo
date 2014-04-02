@@ -65,15 +65,6 @@
 			<groupId>org.jscience</groupId>
 			<artifactId>jscience</artifactId>
 			<version>4.3.1</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/jscience-4.3.1.jar</systemPath>
-		</dependency>
-		<dependency>
-			<groupId>net.jpountz</groupId>
-			<artifactId>lz4-java</artifactId>
-			<version>1.2</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/lz4-1.2-SNAPSHOT.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<repositories>
@@ -189,7 +180,7 @@
 					<instructions>
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${project.version}</Bundle-Version>
-						<Bundle-ClassPath>.,{maven-dependencies},lib/jscience-4.3.1.jar</Bundle-ClassPath>
+						<Bundle-ClassPath>.,{maven-dependencies}</Bundle-ClassPath>
  						<Export-Package>org.geppetto.core.*,org.jscience.*, javolution.*, org.opengis.*, javax.measure.*, javax.realtime.*,</Export-Package>
 					</instructions>
 				</configuration>
